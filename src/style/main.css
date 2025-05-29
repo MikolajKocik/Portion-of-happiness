@@ -1,0 +1,27 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: hsl(38, 64%, 84%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+#logo img{
+    width: 14rem;
+    height: auto;
+    margin-left: 4rem;
+}
+header #name-container{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0.2rem 0.2rem 0.3rem grey;
+    margin-right: 16rem;
+}
+h1{
+    font-size: 3.8rem;
+}
