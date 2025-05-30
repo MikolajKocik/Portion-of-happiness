@@ -5,23 +5,153 @@ body{
 }
 header{
     background-color: hsl(38, 64%, 84%);
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 3rem;
 }
-#logo img{
+#logo1 img, #logo2 img{
     width: 14rem;
     height: auto;
-    margin-left: 4rem;
+    padding: 3rem;
+}
+#logo1 {
+    padding-left: 3rem;
+}
+#logo2 {
+    padding-right: 3rem;
 }
 header #name-container{
     text-align: center;
     color: white;
     font-weight: bold;
     text-shadow: 0.2rem 0.2rem 0.3rem grey;
-    margin-right: 16rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+@font-face {
+    font-family: Roboto-medium;
+    src: url(/src/fonts/Roboto-MediumItalic.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(/src/fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: OpenSans-Italic;
+    src: url(/src/fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+h1, h1 #of, #name-container #res-slogan{
+    font-family: sans-serif, Roboto-medium, Montserrat, OpenSans-Italic;
 }
 h1{
     font-size: 3.8rem;
+}
+h1 #title-of{
+    font-size: 3.2rem;
+}
+#name-container #res-slogan{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.nav-container{
+    background-color: hsl(44 100% 35.4%);
+    padding: 0.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 0.3rem solid grey;
+    border-bottom: 0.3rem solid grey;
+}
+.nav-container .nav-element p{
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white;
+    padding-left: 0.4rem;
+}
+.nav-element button{
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: hsl(47, 88%, 42%);
+    border: 0.1rem solid white;
+    border-radius: 20%;
+    width: auto;
+    height: 4rem;
+}
+.fa-solid.fa-house.fa-2x, .fa-solid.fa-circle-info.fa-2x,
+.fa-brands.fa-elementor.fa-2x, .fa-solid.fa-truck.fa-2x,
+.fa-solid.fa-phone.fa-2x{
+    color:white;
+}
+.nav-element button{
+    box-shadow: 0.1rem 0.1rem 0.9rem;
+    cursor: pointer;
+}
+.nav-element button:hover{
+    background-color: rgb(231, 165, 44);
+    transition: 1s;
+    box-shadow: 0.2rem 0.2rem 0.9rem white;
+}
+section{
+    width: 100%;
+    position: relative;
+}
+section #background-img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    filter: blur(0.2rem);
+}
+.section-meals-and-drinks1,
+.section-meals-and-drinks2{
+    display: inline-flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    border: 0.1rem solid rgb(131, 28, 28);
+    border-radius: 15%;
+    padding-bottom: 3.7rem;
+    margin-left: 4.5rem;
+    margin-top: 5.5rem;
+    overflow: hidden;
+}
+.section-meals-and-drinks1 img,
+.section-meals-and-drinks2 img{
+    width: 14rem;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+
+.section-meals-and-drinks1 p,
+.section-meals-and-drinks2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:white;
+}
+.section-meals-and-drinks1 .opt-description,
+.section-meals-and-drinks2 .opt-description{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(177, 92, 22);
+}
+.section-meals-and-drinks1 a,
+.section-meals-and-drinks2 a{
+    display: block;
+}
+.section-meals-and-drinks1:hover,
+.section-meals-and-drinks2:hover{
+    transform: rotate(-15deg);
+    transition: 1s;
 }
