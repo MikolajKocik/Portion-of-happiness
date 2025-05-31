@@ -114,6 +114,10 @@ section #background-img{
     z-index: 0;
     filter: blur(0.2rem);
 }
+#container-meals-and-drinks{
+    z-index: 1;
+    margin-left: 5rem;
+}
 .section-meals-and-drinks1,
 .section-meals-and-drinks2{
     display: inline-flex;
