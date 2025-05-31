@@ -25,46 +25,43 @@
     <main>
         <nav>
             <div class="nav-container">
-                <div class="nav-element">
-                    <button href="#Home">
-                        <i class="fa-solid fa-house fa-2x"></i>
-                        <p>Home</p>
-                    </button>
-                </div>
                 <div class="nav-element"> 
-                    <button href="#About">
-                        <i class="fa-solid fa-circle-info fa-2x"></i>
-                        <p>About</p>
-                    </button>
+                    <a href="#About">
+                        <button>
+                            <i class="fa-solid fa-circle-info fa-2x"></i>
+                            <p>About</p>
+                        </button>
+                    </a>
                 </div> 
                 <div class="nav-element">
-                    <button href="#Menu">
-                        <i class="fa-brands fa-elementor fa-2x"></i>
-                        <p>Menu</p>
-                    </button>
+                    <a href="#container-images-food">
+                        <button>
+                            <i class="fa-brands fa-elementor fa-2x"></i>
+                            <p>Menu</p>
+                        </button>
+                    </a>
                 </div>
                 <div class="nav-element">
-                    <button href="#Delivery">
-                        <i class="fa-solid fa-truck fa-2x"></i>
-                        <p>Delivery</p>
-                    </button>
+                    <a href="#Delivery">
+                        <button>
+                            <i class="fa-solid fa-truck fa-2x"></i>
+                            <p>Delivery</p>
+                        </button>
+                    </a>
                 </div>
                 <div class="nav-element">
-                    <button href="#Contact">
-                        <i class="fa-solid fa-phone fa-2x"></i>
-                        <p>Contact</p>
-                    </button>
-                </div>
-                <div class="nav-element">
-                    <button id="arrow-down" href="#ArrowDown">
-                        <i class="fa-solid fa-arrow-down fa-2x"></i>
-                    </button>
+                    <a href="#Contact">
+                        <button >
+                            <i class="fa-solid fa-phone fa-2x"></i>
+                            <p>Contact</p>
+                        </button>
+                    </a>
                 </div>
             </div>
         </nav>
         <section>
                 <img id="background-img" src="../src/images/restaurant-background.png" alt="restaurant-inside-photo-blur">
-                <div id="container-meals-and-drinks"></div>
+                <div id="container-images-food">
                     <div class="section-meals-and-drinks1">
                         <a href="#salad" title="go to salads section">
                                 <img src="../src/images/salad.png" alt="salads">
@@ -132,17 +129,344 @@
                 </div>
             <br>
             <div id="container-table-food">
-                <table>
-                    <thead id="table-head">
+                <table id="salad-table" class="food-table" border="1">
+                    <thead class="table-head">
                         <tr>
                             <th></th>
+                            <th>Salad</th>
+                            <th>Description</th>
+                            <th>Price</th>
                         </tr>
                     </thead>
-                    <tbody id="table-body">
+                    <tbody class="table-body">
                         <tr>
-                            <td>
-
-                            </td>
+                            <th><img src="../src/images/Table-food/Insalata Caprese.png" alt="Insalata Caprese - salad"></th>
+                            <td>Insalata Caprese</td>
+                            <td>Made of tomatoes, mozzarella, basil, olive oil</td>
+                            <td>8€</td>
+                        </tr>    
+                            <th><img src="../src/images/Table-food/Insalata di Rucola e Parmigiano.png" alt="Insalata di Rucola e Parmigiano - salad"></th>
+                            <td>Insalata di Rucola e Parmigiano</td>
+                            <td>With rocket, parmesan flakes and olive oil</td>
+                            <td>7€</td>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Panzanella.png" alt="Panzanella - salad"></th>
+                            <td>Panzanella</td>
+                            <td>Salad of stale bread, tomatoes, cucumbers and onions</td>
+                            <td>6€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Insalata di Mare.png" alt="Insalata di Mare - salad"></th>
+                            <td>Insalata di Mare</td>
+                            <td>Seafood salad (squid, shrimp, mussels)</td>
+                            <td>12€</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table id="pasta-table" class="food-table" border="1">
+                    <thead class="table-head">
+                        <tr>
+                            <th></th>
+                            <th>Pasta</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr>
+                            <th><img src="../src/images/Table-food/Spaghetti alla Carbonara.png" alt="Spaghetti alla Carbonara - pasta"></th>
+                            <td>Spaghetti alla Carbonara</td>
+                            <td>With egg, pancetta, parmesan</td>
+                            <td>11€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Spaghetti al Pomodoro.png" alt="Spaghetti al Pomodoro - pasta"></th>
+                            <td>Spaghetti al Pomodoro</td>
+                            <td>With tomato sauce</td>
+                            <td>8€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Pasta alla Norma.png" alt="Pasta alla Norma - pasta"></th>
+                            <td>Pasta alla Norma</td>
+                            <td>With eggplant, tomatoes, ricotta</td>
+                            <td>10€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Lasagne alla Bolognese.png" alt="Lasagne alla Bolognese - pasta"></th>
+                            <td>Lasagne alla Bolognese</td>
+                            <td>Baked pasta sheets with meat and béchamel sauce</td>
+                            <td>12€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Tagliatelle al Pesto.png" alt="Tagliatelle al Pesto - pasta"></th>
+                            <td>Tagliatelle al Pesto</td>
+                            <td>With pesto sauce made of basil, pine nuts, olive oil and parmesan</td>
+                            <td>9€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Ravioli di Ricotta e Spinaci.png" alt="Ravioli di Ricotta e Spinaci - pasta"></th>
+                            <td>Ravioli di Ricotta e Spinaci</td>
+                            <td>Stuffed with ricotta and spinach</td>
+                            <td>8€</td>
+                        </tr>
+                    </tbody>
+                </table>  
+                <br>
+                <table id="soup-table" class="food-table" border="1">
+                    <thead class="table-head">
+                        <tr>
+                            <th></th>
+                            <th>Soup</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr>
+                            <th><img src="../src/images/Table-food/Minestrone.png" alt="Minestrone - soup"></th>
+                            <td>Minestrone</td>
+                            <td>Vegetable soup with noodles or rice</td>
+                            <td>8€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Zuppa di Pesce.png" alt="Zuppa di Pesce - soup"></th>
+                            <td>Zuppa di Pesce</td>
+                            <td>Fish soup</td>
+                            <td>14€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Pasta e Fagioli.png" alt="Pasta e Fagioli - soup"></th>
+                            <td>Pasta e Fagioli</td>
+                            <td>Bean and pasta soup</td>
+                            <td>8€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Ribollita.png" alt="Ribollita - soup"></th>
+                            <td>Ribollita</td>
+                            <td>Tuscan vegetable soup with stale bread</td>
+                            <td>9€</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table id="pizza-table" class="food-table" border="1">
+                    <thead class="table-head">
+                        <tr>
+                            <th></th>
+                            <th>Pizza</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr>
+                            <th><img src="../src/images/Table-food/Pizza Margherita.png" alt="Pizza Margherita - pizza"></th>
+                            <td>Pizza Margherita</td>
+                            <td>With tomato sauce, mozzarella and basil</td>
+                            <td>7€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Pizza Quattro Stagioni.png" alt="Pizza Quattro Stagioni - pizza"></th>
+                            <td>Pizza Quattro Stagioni</td>
+                            <td>Divided into four parts, each with different ingredients</td>
+                            <td>10€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Pizza Prosciutto e Funghi.png" alt="Pizza Prosciutto e Funghi - pizza"></th>
+                            <td>Pizza Prosciutto e Funghi</td>
+                            <td>With ham and mushrooms</td>
+                            <td>9€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="..//src/images/Table-food/Pizza Quattro Formaggi.png" alt="Pizza Quattro Formaggi - pizza"></th>
+                            <td>Pizza Quattro Formaggi</td>
+                            <td>With four types of cheese</td>
+                            <td>10€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Pizza Diavola.png" alt="Pizza Diavola - pizza"></th>
+                            <td>Pizza Diavola</td>
+                            <td>With spicy salami</td>
+                            <td>10€</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table id="dessert-table" class="food-table" border="1">
+                    <thead class="table-head">
+                        <tr>
+                            <th></th>
+                            <th>Dessert</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr>
+                            <th><img src="../src/images/Table-food/Tiramisù.PNG" alt="Tiramisù - dessert"></th>
+                            <td>Tiramisù</td>
+                            <td>A classic dessert based on sponge cake, mascarpone, coffee and cocoa</td>
+                            <td>6€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Panna Cotta.png" alt="Panna Cotta - dessert"></th>
+                            <td>Panna Cotta</td>
+                            <td>A delicate, creamy dessert with fruit sauce</td>
+                            <td>5€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Cannoli.png" alt="Cannoli - dessert"></th>
+                            <td>Cannoli</td>
+                            <td>Crispy pastry tubes stuffed with ricotta</td>
+                            <td>3€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Gelato.png" alt="Gelato - dessert"></th>
+                            <td>Gelato</td>
+                            <td>Italian ice cream in various flavors</td>
+                            <td>2,5€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Zabaglione.png" alt="Zabaglione - dessert"></th>
+                            <td>Zabaglione</td>
+                            <td>Cream based on egg yolks, sugar and sweet wine (Marsala)</td>
+                            <td>6€</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table id="appetizer-table" class="food-table" border="1">
+                    <thead class="table-head">
+                        <tr>
+                            <th></th>
+                            <th>Appetizer</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr>
+                            <th><img src="../src/images/Table-food/Bruschetta.png" alt="Bruschetta - appetizer"></th>
+                            <td>Bruschetta</td>
+                            <td>Croutons with tomatoes, garlic, olive oil and basil</td>
+                            <td>4€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Carpaccio di Manzo.png" alt="Carpaccio di Manzo - appetizer"></th>
+                            <td>Carpaccio di Manzo</td>
+                            <td>Thinly sliced beef with rocket, parmesan and olive oil</td>
+                            <td>11€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Prosciutto e Melone.png" alt="Prosciutto e Melone - appetizer"></th>
+                            <td>Prosciutto e Melone</td>
+                            <td>Parma ham with melon</td>
+                            <td>9€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Olive all'Ascolana.png" alt="Olive all'Ascolana - appetizer"></th>
+                            <td>Olive all'Ascolana</td>
+                            <td>Olives stuffed with meat, breaded and fried</td>
+                            <td>7€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Frittata di Verdure.png" alt="Frittata di Verdure - appetizer"></th>
+                            <td>Frittata di Verdure</td>
+                            <td>Omelette with vegetables</td>
+                            <td>5€</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table id="wine-table" class="food-table" border="1">
+                    <thead class="table-head">
+                        <tr>
+                            <th></th>
+                            <th>Wine</th>
+                            <th>Price - Bootle</th>
+                            <th>Price - Glass</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr>
+                            <th><img src="../src/images/Table-food/Chianti.png" alt="Chianti - wine"></th>
+                            <td>Chianti</td>
+                            <td>22€</td>
+                            <td>5€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Barolo.png" alt="Barolo - wine"></th>
+                            <td>Barolo</td>
+                            <td>55€</td>
+                            <td>10€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Brunello di Montalcino.png" alt="Brunello di Montalcino - wine"></th>
+                            <td>Brunello di Montalcino</td>
+                            <td>70€</td>
+                            <td>12€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Prosecco.png" alt="Prosecco - wine"></th>
+                            <td>Prosecco</td>
+                            <td>18€</td>
+                            <td>5€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Lambrusco.png" alt="Lambrusco - wine"></th>
+                            <td>Lambrusco</td>
+                            <td>14€</td>
+                            <td>4€</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table id="drinks-table" class="food-table" border="1">
+                    <thead class="table-head">
+                        <tr>
+                            <th></th>
+                            <th>Drink</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr>
+                            <th><img src="../src/images/Table-food/Caffè Espresso.png" alt="Caffè Espresso - drink"></th>
+                            <td>Caffè Espresso</td>
+                            <td>Classic italian coffee</td>
+                            <td>1€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Caffè Macchiato.png" alt="Caffè Macchiato - drink"></th>
+                            <td>Caffè Macchiato</td>
+                            <td>Espresso with a little milk</td>
+                            <td>2€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Acqua frizzante.png" alt="Acqua frizzante - drink"></th>
+                            <td>Acqua frizzante</td>
+                            <td>Sparkling water</td>
+                            <td>0,5€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Limoncello.png" alt="Limoncello"></th>
+                            <td>Limoncello</td>
+                            <td>Lemon liqueur</td>
+                            <td>4€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Chinotto.png" alt="Chinotto - drink"></th>
+                            <td>Chinotto</td>
+                            <td>Carbonated drink based on bitter orange</td>
+                            <td>2€</td>
+                        </tr>
+                        <tr>
+                            <th><img src="../src/images/Table-food/Aranciata.png" alt="Aranciata - drink"></th>
+                            <td>Aranciata</td>
+                            <td>Carbonated orange drink</td>
+                            <td>2€</td>
                         </tr>
                     </tbody>
                 </table>

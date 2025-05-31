@@ -16,10 +16,10 @@ header{
     padding: 3rem;
 }
 #logo1 {
-    padding-left: 3rem;
+    padding-left: 10rem;
 }
 #logo2 {
-    padding-right: 3rem;
+    padding-right: 10rem;
 }
 header #name-container{
     text-align: center;
@@ -61,9 +61,13 @@ h1 #title-of{
     flex-wrap: wrap;
     position: sticky;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border-top: 0.3rem solid grey;
     border-bottom: 0.3rem solid grey;
+}
+.nav-container .nav-element{
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 .nav-container .nav-element p{
     text-decoration: none;
@@ -72,6 +76,9 @@ h1 #title-of{
     font-size: 1.4rem;
     color: white;
     padding-left: 0.4rem;
+}
+.nav-container .nav-element a{
+    text-decoration: none;
 }
 .nav-element button{
     display: flex;
@@ -84,10 +91,13 @@ h1 #title-of{
     width: auto;
     height: 4rem;
 }
-.nav-element #arrow-down{
+#arrow-down{
     width: auto;
     height: auto;
     padding: 1rem;
+}
+#arrow-up{
+
 }
 .fa-solid.fa-house.fa-2x, .fa-solid.fa-circle-info.fa-2x,
 .fa-brands.fa-elementor.fa-2x, .fa-solid.fa-truck.fa-2x,
@@ -114,9 +124,11 @@ section #background-img{
     z-index: 0;
     filter: blur(0.2rem);
 }
-#container-meals-and-drinks{
+#container-images-food{
+    position: relative;
     z-index: 1;
-    margin-left: 5rem;
+    padding-left: 20rem;
+    padding-right: 11.5rem;
 }
 .section-meals-and-drinks1,
 .section-meals-and-drinks2{
@@ -126,11 +138,12 @@ section #background-img{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    z-index: 1;
+    z-index: 2;
     border: 0.2rem solid rgb(131, 28, 28);
     border-radius: 15%;
     padding-bottom: 3.7rem;
-    margin-left: 4.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
     margin-top: 5.5rem;
     overflow: hidden;
 }
@@ -141,7 +154,6 @@ section #background-img{
     display: block;
     overflow: hidden;
 }
-
 .section-meals-and-drinks1 p,
 .section-meals-and-drinks2 p{
     font-family: Arial, Helvetica, sans-serif;
@@ -161,11 +173,58 @@ section #background-img{
 }
 #container-table-food{
     position: relative;
-    display: block;
+    z-index: 1;
+    margin-left: 21rem;
+    margin-right: 21rem;
 }
+.food-table{
+    border: 0.1rem solid brown;
+    border-collapse: collapse;
+    margin-top: 12rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.5rem;
+    color: white;
+}
+.table-head{
+    background-color: rgb(177, 92, 22);
+}
+.table-body{
+    background-color: rgb(131, 59, 12);
+}
+.food-table img{
+    width: 5rem;
+    height: auto;
+}
+#soup-table{
+    margin-left: 17rem;
+    margin-right: 17rem;
+}
+#pizza-table{
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+#appetizer-table{
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+#drinks-table{
+    margin-left: 17rem;
+    margin-right: 17rem;
+}
+#wine-table{
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+
+
 
 .section-meals-and-drinks1:hover,
 .section-meals-and-drinks2:hover{
-    transform: rotate(-15deg);
+    transform: rotate(-10deg);
     transition: 1s;
 }
